@@ -1,0 +1,172 @@
+@font-face {
+  font-family: Open Sans;
+  src: url(../fonts/open_sans/OpenSans-ExtraBold.ttf);
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: Open Sans;
+  src: url(../fonts/open_sans/OpenSans-Bold.ttf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: Open Sans;
+  src: url(../fonts/open_sans/OpenSans-SemiBold.ttf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: Open Sans;
+  src: url(../fonts/open_sans/OpenSans-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Open Sans;
+  src: url(../fonts/open_sans/OpenSans-Light.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Lato;
+  src: url(../fonts/Lato/Lato-Black.ttf);
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: Lato;
+  src: url(../fonts/Lato/Lato-Bold.ttf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: Lato;
+  src: url(../fonts/Lato/Lato-Semibold.ttf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: Lato;
+  src: url(../fonts/Lato/Lato-Medium.ttf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Lato;
+  src: url(../fonts/Lato/Lato-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Lato;
+  src: url(../fonts/Lato/Lato-Light.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Lato;
+  src: url(../fonts/Lato/Lato-Thin.ttf);
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: Yeseva;
+  src: url(../fonts/YesevaOne-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Gentium;
+  src: url(../fonts/GenBkBasB.ttf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: Gentium;
+  src: url(../fonts/GenBkBasR.ttf);
+  font-weight: 400;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Open Sans, Arial sans-serif;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.section-title__heading {
+  margin: 0;
+  font-family: Yeseva;
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.section-title__heading_white {
+  color: #fff;
+}
+
+.section-title__heading_yellow {
+  color: #cc9900;
+}
+
+header {
+  width: 100%;
+  background: url(../img/header__bg.jpg);
+}
+
+header .logo-menu__block {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(transparent));
+  background: linear-gradient(rgba(0, 0, 0, 0.7), transparent);
+}
+
+header .logo-menu__block .menu-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+header .logo-menu__block .menu-icons .header-menu .toggler-icon {
+  display: none;
+}
+
+header .logo-menu__block .menu-icons .header-menu .nav-bar {
+  margin: 0;
+  padding: 0;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .logo-menu__block .menu-icons .header-menu .nav-bar .nav-item {
+  list-style: none;
+  margin-left: 50px;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  border-top: 3px solid transparent;
+}
+
+header .logo-menu__block .menu-icons .header-menu .nav-bar .nav-item:first-child {
+  margin-left: 0;
+}
+
+header .logo-menu__block .menu-icons .header-menu .nav-bar .nav-item:hover {
+  border-top: 3px solid #cc9900;
+}

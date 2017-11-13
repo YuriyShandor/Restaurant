@@ -1,0 +1,263 @@
+// to compile...
+
+@import "./_components/_open-sans.scss";
+@import "./_components/lato.scss";
+
+@font-face {
+  font-family: Yeseva;
+  src: url(../fonts/YesevaOne-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Gentium;
+  src: url(../fonts/GenBkBasB.ttf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: Gentium;
+  src: url(../fonts/GenBkBasR.ttf);
+  font-weight: 400;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  //border: 1px solid red;
+}
+
+$yellow: #cc9900;
+
+body {
+  font-family: Open Sans, Arial sans-serif;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section-title__heading {
+  margin: 0;
+  font-family: Yeseva;
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.section-title__heading_white {
+  color: #fff;
+}
+
+.section-title__heading_yellow {
+  color: $yellow;
+}
+
+header {
+  width: 100%;
+  background: url(../img/header__bg.jpg);
+
+  .logo-menu__block {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.0)));
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.0));
+
+    .menu-icons {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+
+      .header-menu {
+        .toggler-icon {
+          display: none;
+        }
+
+        .nav-bar {
+          margin: 0;
+          padding: 0;
+          display: -ms-flex;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+
+          .nav-item {
+            list-style: none;
+            margin-left: 50px;
+            padding-top: 30px;
+            padding-bottom: 40px;
+            border-top: 3px solid transparent;
+
+            &:first-child {
+              margin-left: 0;
+            }
+
+            &:hover {
+              border-top: 3px solid $yellow;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width : 1199px) {
+
+}
+
+@media only screen and (max-width : 991px) {
+
+}
+
+@media only screen and (max-width : 767px) {
+
+}
+
+@media only screen and (max-width : 567px) {
+
+}
+
+
+
+@media only screen and (max-width : 1199px) {
+
+}
+
+@media only screen and (max-width : 991px) {
+
+}
+
+@media only screen and (max-width : 767px) {
+
+}
+
+@media only screen and (max-width : 567px) {
+
+}
+
+
+@media only screen and (max-width : 1199px) {
+
+}
+
+@media only screen and (max-width : 991px) {
+
+}
+
+@media only screen and (max-width : 767px) {
+
+}
+
+@media only screen and (max-width : 567px) {
+
+}
+
+
+@media only screen and (max-width : 1199px) {
+
+}
+
+@media only screen and (max-width : 991px) {
+
+}
+
+@media only screen and (max-width : 767px) {
+
+}
+
+@media only screen and (max-width : 567px) {
+
+}
+
+
+@media only screen and (max-width : 1199px) {
+
+}
+
+@media only screen and (max-width : 991px) {
+
+}
+
+@media only screen and (max-width : 767px) {
+
+}
+
+@media only screen and (max-width : 567px) {
+
+}
+
+
+@media only screen and (max-width : 1199px) {
+
+}
+
+@media only screen and (max-width : 991px) {
+
+}
+
+@media only screen and (max-width : 767px) {
+
+}
+
+@media only screen and (max-width : 567px) {
+
+}
+
+
+@media only screen and (max-width : 1199px) {
+
+}
+
+@media only screen and (max-width : 991px) {
+
+}
+
+@media only screen and (max-width : 767px) {
+
+}
+
+@media only screen and (max-width : 567px) {
+
+}
+
+
+@media only screen and (max-width : 1199px) {
+
+}
+
+@media only screen and (max-width : 991px) {
+
+}
+
+@media only screen and (max-width : 767px) {
+
+}
+
+@media only screen and (max-width : 567px) {
+
+}
+
+
+@media only screen and (max-width : 1199px) {
+
+}
+
+@media only screen and (max-width : 991px) {
+
+}
+
+@media only screen and (max-width : 767px) {
+
+}
+
+@media only screen and (max-width : 567px) {
+
+}
