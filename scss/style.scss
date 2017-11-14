@@ -72,6 +72,17 @@ body {
   }
 }
 
+p {
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 80%;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+}
+
 header {
   width: 100%;
   background: url(../img/header__bg.jpg) no-repeat center / cover;
@@ -360,6 +371,11 @@ header {
       width: 225px;
     }
   }
+
+  p {
+    font-size: 14px;
+    margin-top: 25px;
+  }
 }
 
 @media only screen and (max-width : 576px) {
@@ -442,11 +458,6 @@ header {
     text-align: center;
     p {
       width: 90%;
-      margin: 0 auto;
-      margin-top: 30px;
-      font-size: 16px;
-      font-weight: 400;
-      font-family: Lato;
       color: #4c4c4c;
     }
 
@@ -467,10 +478,6 @@ header {
     padding: 43px 0;
 
     .section-about__info {
-      p {
-        margin-top: 25px;
-        font-size: 14px;
-      }
 
       .section-about__cook {
         margin-top: 40px;
@@ -503,9 +510,47 @@ header {
   }
 }
 
+#section-ingredients {
+  width: 100%;
+  background: url(../img/section-ingredients__bg.jpg) no-repeat center / cover;
+  padding: 100px 0;
+
+  .ingredients-block {
+    padding: 75px 0;
+    background: rgba(0, 0, 0, 0.7);
+
+    .ingredients {
+      width: 68%;
+      margin: 0 auto;
+      margin-top: 70px;
+      display: -ms-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+
+      img {
+        display: inline-block;
+      }
+    }
+  }
+}
 
 @media only screen and (max-width : 1199px) {
+  #section-ingredients {
+    padding: 80px 0;
 
+    .ingredients-block {
+      padding: 60px 0;
+
+      .ingredients {
+        width: 78%;
+        margin-top: 60px;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width : 991px) {
@@ -513,11 +558,37 @@ header {
 }
 
 @media only screen and (max-width : 767px) {
+  #section-ingredients {
+    padding: 60px 0;
 
+    .ingredients-block {
+      padding: 45px 0;
+
+      .ingredients {
+        margin-top: 50px;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width : 567px) {
+  #section-ingredients {
+    padding: 50px 0;
 
+    .ingredients-block {
+      padding: 40px 0;
+
+      .ingredients {
+        width: 90%;
+        margin-top: 40px;
+
+        img {
+          width: 80px;
+          height: 80px;
+        }
+      }
+    }
+  }
 }
 
 
