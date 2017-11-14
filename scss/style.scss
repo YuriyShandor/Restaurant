@@ -350,6 +350,16 @@ header {
       padding: 11px 0;
     }
   }
+
+  .section-title {
+    .section-title__heading {
+      font-size: 32px;
+    }
+
+    img {
+      width: 225px;
+    }
+  }
 }
 
 @media only screen and (max-width : 576px) {
@@ -410,24 +420,87 @@ header {
       margin-left: 10px;
     }
   }
+
+  .section-title {
+    .section-title__heading {
+      font-size: 26px;
+      margin-bottom: 10px;
+    }
+
+    img {
+      width: 200px;
+    }
+  }
 }
 
+#section-about {
+  width: 100%;
+  background: url(../img/section-about__bg.jpg) no-repeat center / cover;
+  padding: 50px 0;
 
+  .section-about__info {
+    text-align: center;
+    p {
+      width: 90%;
+      margin: 0 auto;
+      margin-top: 30px;
+      font-size: 16px;
+      font-weight: 400;
+      font-family: Lato;
+      color: #4c4c4c;
+    }
 
-@media only screen and (max-width : 1199px) {
+    .section-about__cook {
+      margin-top: 50px;
+      -webkit-transform: translateX(17%);
+              transform: translateX(17%);
+    }
+  }
 
+  .section-about__dish {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width : 991px) {
+  #section-about {
+    padding: 43px 0;
 
+    .section-about__info {
+      p {
+        margin-top: 25px;
+        font-size: 14px;
+      }
+
+      .section-about__cook {
+        margin-top: 40px;
+      }
+    }
+
+    .section-about__dish {
+      margin-top: 30px;
+    }
+  }
 }
 
 @media only screen and (max-width : 767px) {
+  #section-about {
+    padding: 40px 0;
 
+    .section-about__dish {
+      margin-top: 25px;
+    }
+  }
 }
 
 @media only screen and (max-width : 567px) {
+  #section-about {
+    padding: 35px 0;
 
+    .section-about__dish {
+      margin-top: 20px;
+    }
+  }
 }
 
 
