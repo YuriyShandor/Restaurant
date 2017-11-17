@@ -575,3 +575,119 @@ header .header-btn_white:hover {
     height: 80px;
   }
 }
+
+#section-menu {
+  width: 100%;
+  background: url(../img/section-menu__bg.jpg) no-repeat center/cover;
+  padding-top: 70px;
+  padding-bottom: 60px;
+}
+
+#section-menu .menu-block {
+  margin-top: 30px;
+}
+
+#section-menu .menu-block .section-title {
+  margin-bottom: 40px;
+}
+
+#section-menu .menu-block .menu__dish {
+  margin-bottom: 40px;
+  position: relative;
+}
+
+#section-menu .menu-block .menu__dish_title {
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  border-bottom: 1px solid #cc9900;
+}
+
+#section-menu .menu-block .menu__dish_title h3 {
+  color: #cc9900;
+  font-size: 21px;
+  font-weight: 400;
+  font-family: Yeseva;
+}
+
+#section-menu .menu-block .menu__dish_discr p {
+  color: #000;
+  margin: 0;
+  margin-top: 15px;
+  text-align: left;
+  width: 100%;
+  font-size: 14px;
+}
+
+#section-menu .menu-block .menu__dish .special {
+  position: absolute;
+  width: 110%;
+  height: 130%;
+  top: -10%;
+  left: -5%;
+  border: 1px solid #cc9900;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+#section-menu .menu-block .menu__dish .special-block {
+  width: 69px;
+  height: 21px;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #fff;
+  background: #cc9900;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: -21px;
+  margin-right: -1px;
+}
+
+#section-menu .menu-block_04 {
+  margin-top: -76px;
+}
+
+@media only screen and (max-width: 1199px) {
+  #section-menu {
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+  #section-menu .menu-block .menu__dish .special {
+    height: 120%;
+  }
+  #section-menu .menu-block_04 {
+    margin-top: -100px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  #section-menu {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  #section-menu .menu-block .menu__dish .special {
+    width: 104%;
+    left: -2%;
+  }
+  #section-menu .menu-block_04 {
+    margin-top: 30px;
+  }
+}
