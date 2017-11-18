@@ -721,25 +721,83 @@ header {
   }
 }
 
-@media only screen and (max-width : 767px) {
+#section-reviews {
+  width: 100%;
+  background: url(../img/section-reviews__bg.jpg) no-repeat center / cover;
+  padding: 100px 0;
 
-}
+  .review-block {
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 80px 70px 100px 70px;
+    background: rgba(0, 0, 0, 0.8);
 
-@media only screen and (max-width : 567px) {
+    q {
+      margin-top: 30px;
+      font-family: Gentium;
+      font-size: 24px;
+      font-weight: 700;
+      color: #dde0df;
+      text-align: center;
+    }
 
-}
-
-
-@media only screen and (max-width : 1199px) {
-
+    span {
+      margin-top: 30px;
+      font-family: Lato;
+      font-size: 18px;
+      font-weight: 700;
+      color: #fff;
+    }
+  }
 }
 
 @media only screen and (max-width : 991px) {
+  #section-reviews {
+    padding: 75px 0;
 
+    .review-block {
+      padding: 70px 60px 80px 60px;
+
+      q {
+        margin-top: 25px;
+        font-size: 20px;
+      }
+
+      span {
+        margin-top: 25px;
+        font-size: 16px;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width : 767px) {
+  #section-reviews {
+    padding: 50px 0;
 
+    .review-block {
+      padding: 50px 40px 60px 40px;
+
+      q {
+        margin-top: 20px;
+        font-size: 17px;
+      }
+
+      span {
+        margin-top: 20px;
+        font-size: 13px;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width : 567px) {
