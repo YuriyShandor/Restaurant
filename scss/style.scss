@@ -2,6 +2,7 @@
 
 @import "./_components/_open-sans.scss";
 @import "./_components/lato.scss";
+@import "./nice-select.scss";
 
 @font-face {
   font-family: Yeseva;
@@ -800,10 +801,78 @@ header {
   }
 }
 
-@media only screen and (max-width : 567px) {
+#section-reservations {
+  width: 100%;
+  background: url(../img/section-about__bg.jpg) no-repeat center / cover;
+  padding: 100px 0;
 
+  .reservations {
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+
+    &__image-block {
+      display: -ms-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+      padding: 0;
+
+      img {
+        height: inherit;
+      }
+    }
+
+    &__info-block {
+      -webkit-box-flex: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1;
+
+      .section-title {
+        margin-bottom: 20px;
+      }
+
+      p {
+        color: #000;
+        margin-top: 10px;
+        width: 95%;
+      }
+
+      .form {
+        margin-top: 40px;
+        display: -ms-flex;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+
+        &__block {
+          display: -ms-flex;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+        }
+      }
+    }
+  }
 }
-
 
 @media only screen and (max-width : 1199px) {
 
