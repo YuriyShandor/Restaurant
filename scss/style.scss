@@ -823,20 +823,18 @@ header {
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between;
-      -ms-flex-negative: 0;
-          flex-shrink: 0;
       padding: 0;
 
       img {
-        height: inherit;
+        height: 520px;
+      }
+
+      #third-image {
+        display: none;
       }
     }
 
     &__info-block {
-      -webkit-box-flex: 1;
-          -ms-flex-positive: 1;
-              flex-grow: 1;
-
       .section-title {
         margin-bottom: 20px;
       }
@@ -848,6 +846,7 @@ header {
       }
 
       .form {
+        width: inherit;
         margin-top: 40px;
         display: -ms-flex;
         display: -webkit-box;
@@ -860,6 +859,7 @@ header {
             flex-wrap: wrap;
 
         &__block {
+          width: 48%;
           display: -ms-flex;
           display: -webkit-box;
           display: -ms-flexbox;
@@ -868,6 +868,117 @@ header {
           -webkit-box-direction: normal;
               -ms-flex-direction: column;
                   flex-direction: column;
+          margin-bottom: 30px;
+
+          span {
+            font-size: 14px;
+            font-weight: 700;
+            color: $yellow;
+            margin-bottom: 5px;
+          }
+
+          input {
+            width: 100%;
+            height: 35px;
+            padding-left: 15px;
+            font-size: 16px;
+            font-family: Open Sans;
+            font-style: italic;
+            font-weight: 400;
+            color: #7c7c7c;
+            outline-color: $yellow;
+            border: 1px solid #c8c6c6;
+          }
+
+          &_input {
+            position: relative;
+
+            i {
+              position: absolute;
+              right: 5%;
+              top: 25%;
+            }
+          }
+
+          &_select {
+            height: 35px;
+            border: 1px solid #c8c6c6;
+            border-radius: 0;
+            padding: 0;
+            padding-left: 15px;
+            font-size: 16px;
+            font-style: italic;
+            color: #7c7c7c;
+            display: -ms-flex;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+
+            &:active, &:focus {
+              border-color: $yellow;
+              color: #7c7c7c;
+            }
+
+            .current {
+              font-family: Open Sans;
+              font-size: 16px;
+              font-weight: 400;
+              color: #7c7c7c;
+            }
+
+            &:after {
+              border-bottom: 1px solid $arrow_color;
+              border-right: 1px solid $arrow_color;
+              height: 7px;
+              width: 7px;
+            }
+
+            &.open {
+              @extend :active;
+              &:after {
+                -webkit-transform: rotate(-135deg);
+                        transform: rotate(-135deg);
+              }
+            }
+
+            .list {
+              width: 100%;
+            }
+
+            .option {
+              padding-left: 15px;
+              &:hover, &.focus, &.selected.focus {
+                background-color: darken(#f6f6f6, 10%);
+
+              }
+              &.selected {
+                font-weight: 400;
+              }
+            }
+          }
+        }
+      }
+
+      .book-now__btn {
+        margin: 0 auto;
+        margin-top: 5px;
+        text-align: center;
+        width: 48%;
+        padding: 10px 0;
+        background: $yellow;
+        font-size: 16px;
+        font-weight: 400;
+        color: #fff;
+        cursor: pointer;
+        -webkit-transition: all, .5s;
+        transition: all, .5s;
+
+        &:hover {
+          background: lighten($yellow, 10%);
+          color: #000;
         }
       }
     }
@@ -875,19 +986,83 @@ header {
 }
 
 @media only screen and (max-width : 1199px) {
+  #section-reservations {
+    padding: 70px 0;
 
-}
+    .reservations {
+      &__image-block {
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
 
-@media only screen and (max-width : 991px) {
+        div {
+          width: 30%;
 
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+
+        #third-image {
+          display: inline-block;
+        }
+      }
+
+      &__info-block {
+        padding: 0 50px;
+        margin-top: 30px;
+
+        .book-now__btn {
+          width: 25%;
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (max-width : 767px) {
+  #section-reservations {
+    padding: 50px 0;
 
+    .reservations {
+
+      &__info-block {
+        padding: 0 15px;
+        margin-top: 30px;
+
+        .book-now__btn {
+          width: 30%;
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (max-width : 567px) {
+  #section-reservations {
+    padding: 30px 0;
 
+    .reservations {
+
+      &__info-block {
+        padding: 0 15px;
+        margin-top: 30px;
+
+        .form {
+          margin-top: 30px;
+
+          &__block {
+            width: 98%;
+            margin-bottom: 20px;
+          }
+        }
+
+        .book-now__btn {
+          width: 50%;
+        }
+      }
+    }
+  }
 }
 
 
