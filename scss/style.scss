@@ -180,6 +180,7 @@ header {
   }
 
   .header-btn {
+    position: relative;
     width: 230px;
     padding: 23px 0;
     font-family: Lato;
@@ -193,6 +194,7 @@ header {
         -ms-flex-pack: center;
             justify-content: center;
     cursor: pointer;
+    text-decoration: none;
     -webkit-transition: all, 0.7s;
     transition: all, 0.7s;
 
