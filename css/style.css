@@ -392,26 +392,6 @@ header .logo-menu__block .menu-icons .header-menu .nav-bar .nav-item .nav-link:h
   color: #cc9900;
 }
 
-header .logo-menu__block .menu-icons .header-icons {
-  margin-left: 15px;
-  margin-bottom: 8px;
-}
-
-header .logo-menu__block .menu-icons .header-icons a {
-  margin-left: 5px;
-  color: #fff;
-  -webkit-transition: all, 0.3s;
-  transition: all, 0.3s;
-}
-
-header .logo-menu__block .menu-icons .header-icons a:hover {
-  color: #cc9900;
-}
-
-header .logo-menu__block .menu-icons .header-icons a i {
-  font-size: 20px;
-}
-
 header .section-title {
   margin-top: 120px;
   margin-bottom: 35px;
@@ -463,6 +443,26 @@ header .header-btn_white {
 
 header .header-btn_white:hover {
   background: #fff;
+}
+
+.social-icons {
+  margin-left: 15px;
+  margin-bottom: 8px;
+}
+
+.social-icons a {
+  margin-left: 5px;
+  color: #fff;
+  -webkit-transition: all, 0.3s;
+  transition: all, 0.3s;
+}
+
+.social-icons a:hover {
+  color: #cc9900;
+}
+
+.social-icons a i {
+  font-size: 20px;
 }
 
 @media only screen and (max-width: 1199px) {
@@ -583,16 +583,6 @@ header .header-btn_white:hover {
     padding-top: 15px;
     padding-bottom: 10px;
   }
-  header .logo-menu__block .menu-icons .header-icons {
-    margin-left: 0;
-    margin-right: 10px;
-  }
-  header .logo-menu__block .menu-icons .header-icons a {
-    margin-left: 5px;
-  }
-  header .logo-menu__block .menu-icons .header-icons a i {
-    font-size: 18px;
-  }
   header .section-title .section-title__heading {
     font-size: 27px;
     margin-bottom: 15px;
@@ -604,6 +594,16 @@ header .header-btn_white:hover {
   }
   header .header-btn_white {
     margin-left: 10px;
+  }
+  .social-icons {
+    margin-left: 0;
+    margin-right: 10px;
+  }
+  .social-icons a {
+    margin-left: 5px;
+  }
+  .social-icons a i {
+    font-size: 18px;
   }
   .section-title .section-title__heading {
     font-size: 26px;
@@ -1164,6 +1164,138 @@ header .header-btn_white:hover {
     margin-bottom: 20px;
   }
   #section-reservations .reservations__info-block .book-now__btn {
-    width: 50%;
+    width: 130px;
+  }
+}
+
+footer {
+  width: 100%;
+  padding: 50px 0;
+  background: #000;
+}
+
+footer .footer-block {
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+footer .footer-block__column {
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+footer .footer-block__column .section-title {
+  margin-bottom: 20px;
+}
+
+footer .footer-block__column .section-title__heading {
+  font-size: 21px;
+}
+
+footer .footer-block__column .section-title img {
+  width: 195px;
+}
+
+footer .footer-block__column p {
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+}
+
+footer .footer-block__column p span {
+  font-weight: 700;
+}
+
+footer .footer-block__column .payments {
+  width: 75%;
+  margin-top: 30px;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+footer .footer-block__column .payments img {
+  width: 35px;
+  height: 24px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-transition: all, .3s;
+  transition: all, .3s;
+}
+
+footer .footer-block__column .payments img:hover {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+
+footer .footer-block__column .social-icons {
+  margin-left: 0;
+  margin-top: 25px;
+}
+
+footer .footer-block__column .social-icons a:first-child {
+  margin-left: 0;
+}
+
+@media only screen and (max-width: 1199px) {
+  footer .footer-block__column p {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  footer {
+    padding: 0;
+    padding-bottom: 30px;
+  }
+  footer .footer-block__column {
+    margin-top: 50px;
+  }
+  footer .footer-block__column p {
+    font-size: 14px;
+    width: 70%;
+  }
+  footer .footer-block__column .payments {
+    width: 25%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  footer {
+    padding-bottom: 20px;
+  }
+  footer .footer-block__column {
+    margin-top: 30px;
+  }
+  footer .footer-block__column p {
+    font-size: 12px;
+    width: 80%;
+  }
+  footer .footer-block__column .payments {
+    width: 33%;
+  }
+}
+
+@media only screen and (max-width: 567px) {
+  footer .footer-block__column .payments {
+    width: 160%;
   }
 }
