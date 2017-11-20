@@ -1101,8 +1101,8 @@ header .header-btn_white:hover {
   font-weight: 400;
   color: #fff;
   cursor: pointer;
-  -webkit-transition: all, .5s;
-  transition: all, .5s;
+  -webkit-transition: all, .7s;
+  transition: all, .7s;
 }
 
 #section-reservations .reservations__info-block .book-now__btn:hover {
@@ -1239,8 +1239,8 @@ footer .footer-block__column .payments img {
   height: 24px;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
-  -webkit-transition: all, .3s;
-  transition: all, .3s;
+  -webkit-transition: all, .5s;
+  transition: all, .5s;
 }
 
 footer .footer-block__column .payments img:hover {
@@ -1298,6 +1298,6 @@ footer .footer-block__column .social-icons a:first-child {
 
 @media only screen and (max-width: 567px) {
   footer .footer-block__column .payments {
-    width: 160%;
+    width: 160px;
   }
 }

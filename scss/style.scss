@@ -975,8 +975,8 @@ header {
         font-weight: 400;
         color: #fff;
         cursor: pointer;
-        -webkit-transition: all, .5s;
-        transition: all, .5s;
+        -webkit-transition: all, .7s;
+        transition: all, .7s;
 
         &:hover {
           background: lighten($yellow, 10%);
@@ -1132,8 +1132,8 @@ footer {
           height: 24px;
           -webkit-filter: grayscale(100%);
                   filter: grayscale(100%);
-          -webkit-transition: all, .3s;
-          transition: all, .3s;
+          -webkit-transition: all, .5s;
+          transition: all, .5s;
 
           &:hover {
             -webkit-filter: grayscale(0%);
@@ -1215,7 +1215,7 @@ footer {
       &__column {
 
         .payments {
-          width: 160%;
+          width: 160px;
         }
       }
     }
