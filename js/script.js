@@ -5,6 +5,7 @@ $(document).ready(function (){
 
   $('select').niceSelect();
 
+  //Scroll to section
   $('a[href^="#"]').on('click',function (e) {
 	  e.preventDefault();
 
@@ -17,4 +18,11 @@ $(document).ready(function (){
 	      window.location.hash = target;
 	  });
 	});
+
+  // Animate effects on scroll
+  AOS.init({
+    duration: 1500,
+    easing: 'ease-in-out-back',
+    once: true,
+  });
 });

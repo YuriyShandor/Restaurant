@@ -267,6 +267,7 @@ body {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 .section-title {
@@ -418,8 +419,8 @@ header .header-btn {
   justify-content: center;
   cursor: pointer;
   text-decoration: none;
-  -webkit-transition: all, 0.7s;
-  transition: all, 0.7s;
+  -webkit-transition: all, 0.5s !important;
+  transition: all, 0.5s !important;
 }
 
 header .header-btn:hover {
