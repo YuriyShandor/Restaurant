@@ -85,6 +85,8 @@ p {
   text-align: center;
 }
 
+// =========== Header ================
+
 header {
   width: 100%;
   background: url(../img/header__bg.jpg) no-repeat center / cover;
@@ -453,6 +455,8 @@ header {
   }
 }
 
+// ============== Section About Us ============
+
 #section-about {
   width: 100%;
   background: url(../img/section-about__bg.jpg) no-repeat center / cover;
@@ -514,10 +518,13 @@ header {
   }
 }
 
+// ============== Section Ingredients ==============
+
 #section-ingredients {
   width: 100%;
   background: url(../img/section-ingredients__bg.jpg) no-repeat center / cover;
   padding: 100px 0;
+  background-attachment: fixed;
 
   .ingredients-block {
     padding: 75px 0;
@@ -558,7 +565,9 @@ header {
 }
 
 @media only screen and (max-width : 991px) {
-
+  #section-ingredients {
+    background-attachment: scroll;
+  }
 }
 
 @media only screen and (max-width : 767px) {
@@ -594,6 +603,8 @@ header {
     }
   }
 }
+
+// =========== Section Menu ================
 
 #section-menu {
   width: 100%;
@@ -725,10 +736,13 @@ header {
   }
 }
 
+// ============== Section Reviews ===============
+
 #section-reviews {
   width: 100%;
   background: url(../img/section-reviews__bg.jpg) no-repeat center / cover;
   padding: 100px 0;
+  background-attachment: fixed;
 
   .review-block {
     display: -ms-flex;
@@ -767,6 +781,7 @@ header {
 @media only screen and (max-width : 991px) {
   #section-reviews {
     padding: 75px 0;
+    background-attachment: scroll;
 
     .review-block {
       padding: 70px 60px 80px 60px;

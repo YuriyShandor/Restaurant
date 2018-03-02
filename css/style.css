@@ -676,6 +676,7 @@ header .header-btn_white:hover {
   width: 100%;
   background: url(../img/section-ingredients__bg.jpg) no-repeat center/cover;
   padding: 100px 0;
+  background-attachment: fixed;
 }
 
 #section-ingredients .ingredients-block {
@@ -710,6 +711,12 @@ header .header-btn_white:hover {
   #section-ingredients .ingredients-block .ingredients {
     width: 78%;
     margin-top: 60px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  #section-ingredients {
+    background-attachment: scroll;
   }
 }
 
@@ -862,6 +869,7 @@ header .header-btn_white:hover {
   width: 100%;
   background: url(../img/section-reviews__bg.jpg) no-repeat center/cover;
   padding: 100px 0;
+  background-attachment: fixed;
 }
 
 #section-reviews .review-block {
@@ -900,6 +908,7 @@ header .header-btn_white:hover {
 @media only screen and (max-width: 991px) {
   #section-reviews {
     padding: 75px 0;
+    background-attachment: scroll;
   }
   #section-reviews .review-block {
     padding: 70px 60px 80px 60px;
