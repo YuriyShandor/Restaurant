@@ -1,7 +1,5 @@
 // to compile...
 
-@import "./_components/_open-sans.scss";
-@import "./_components/lato.scss";
 @import "./nice-select.scss";
 
 @font-face {
@@ -19,6 +17,36 @@
 @font-face {
   font-family: Gentium;
   src: url(../fonts/GenBkBasR.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Lato;
+  src: url(../fonts/Lato/Lato-Bold.ttf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: Lato;
+  src: url(../fonts/Lato/Lato-Medium.ttf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Lato;
+  src: url(../fonts/Lato/Lato-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Open Sans;
+  src: url(../fonts/open_sans/OpenSans-Bold.ttf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: Open Sans;
+  src: url(../fonts/open_sans/OpenSans-Regular.ttf);
   font-weight: 400;
 }
 
