@@ -22,31 +22,31 @@
 
 @font-face {
   font-family: Lato;
-  src: url(../fonts/Lato/Lato-Bold.ttf);
+  src: url(../fonts/Lato-Bold.ttf);
   font-weight: 700;
 }
 
 @font-face {
   font-family: Lato;
-  src: url(../fonts/Lato/Lato-Medium.ttf);
+  src: url(../fonts/Lato-Medium.ttf);
   font-weight: 500;
 }
 
 @font-face {
   font-family: Lato;
-  src: url(../fonts/Lato/Lato-Regular.ttf);
+  src: url(../fonts/Lato-Regular.ttf);
   font-weight: 400;
 }
 
 @font-face {
-  font-family: Open Sans;
-  src: url(../fonts/open_sans/OpenSans-Bold.ttf);
+  font-family: OpenSans;
+  src: url(../fonts/OpenSans-Bold.ttf);
   font-weight: 700;
 }
 
 @font-face {
-  font-family: Open Sans;
-  src: url(../fonts/open_sans/OpenSans-Regular.ttf);
+  font-family: OpenSans;
+  src: url(../fonts/OpenSans-Regular.ttf);
   font-weight: 400;
 }
 
@@ -59,7 +59,7 @@
 $yellow: #cc9900;
 
 body {
-  font-family: Open Sans, Arial sans-serif;
+  font-family: OpenSans, Arial sans-serif;
   padding: 0;
   margin: 0;
   display: -webkit-box;
@@ -119,6 +119,7 @@ header {
   width: 100%;
   background: url(../img/header__bg.jpg) no-repeat center / cover;
   padding-bottom: 140px;
+  background-attachment: fixed;
 
   .logo-menu__block {
     width: 100%;
@@ -305,6 +306,7 @@ header {
 @media only screen and (max-width : 991px) {
   header {
     padding-bottom: 89px;
+    background-attachment: scroll;
 
     .logo-menu__block {
       .menu-icons {
@@ -928,7 +930,7 @@ header {
             height: 35px;
             padding-left: 15px;
             font-size: 16px;
-            font-family: Open Sans;
+            font-family: OpenSans;
             font-style: italic;
             font-weight: 400;
             color: #7c7c7c;
@@ -969,7 +971,7 @@ header {
             }
 
             .current {
-              font-family: Open Sans;
+              font-family: OpenSans;
               font-size: 16px;
               font-weight: 400;
               color: #7c7c7c;
@@ -1150,7 +1152,7 @@ footer {
       }
 
       p {
-        font-family: Open Sans;
+        font-family: OpenSans;
         font-size: 16px;
         font-weight: 400;
         margin: 0;
